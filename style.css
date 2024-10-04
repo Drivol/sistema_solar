@@ -11,7 +11,7 @@
     justify-content: center;
     background-color: black;
     overflow:auto;
-    background-image: url(/imagens/galaxy.jpg); 
+    background-image: url(./imagens/galaxy.jpg); 
 }
 .container {
     font-size: 6px;
@@ -146,7 +146,7 @@ img{
     right: 0.8em;
     width: 2em;
     height: 2em;
-    background-image: url('/imagens/mercurio.png');
+    background-image: url('./imagens/mercurio.png');
     background-size: cover;
 }
 .venus::before {
@@ -154,7 +154,7 @@ img{
     right: 2em;
     width: 2em;
     height: 2em;
-    background-image: url('/imagens/venus.png');
+    background-image: url('./imagens/venus.png');
     background-size: cover;
 }
 .terra::before {
@@ -162,7 +162,7 @@ img{
     right: 0em;
     width: 5em;
     height: 5em;
-    background-image: url('/imagens/terra.png');
+    background-image: url('./imagens/terra.png');
     background-size: cover;
 }
 
@@ -171,7 +171,7 @@ img{
     right: 0.2em;
     width: 1.2em;
     height: 1.2em;
-    background-image: url('/imagens/lua.png');
+    background-image: url('./imagens/lua.png');
     background-size: cover;
 }
 .marte::before {
@@ -179,7 +179,7 @@ img{
     right: 3em;
     width: 3em;
     height: 3em;
-    background-image: url('/imagens/marte.png');
+    background-image: url('./imagens/marte.png');
     background-size: cover;
 }
 .jupiter::before {
@@ -187,7 +187,7 @@ img{
     right: 3em;
     width: 5em;
     height: 5em;
-    background-image: url('/imagens/jupiter.png');
+    background-image: url('./imagens/jupiter.png');
     background-size: cover;
 }
 .saturno::before {
@@ -195,7 +195,7 @@ img{
     right: 5em;
     width: 4.5em;
     height: 4.5em;
-    background-image: url('/imagens/saturno.png');
+    background-image: url('./imagens/saturno.png');
     background-size: cover;
 }
 .urano::before {
@@ -203,7 +203,7 @@ img{
     right: 6.5em;
     width: 4em;
     height: 4em;
-    background-image: url('/imagens/urano.png');
+    background-image: url('./imagens/urano.png');
     background-size: cover;
 }
 .netuno::before {
@@ -211,7 +211,7 @@ img{
     right: 8em;
     width: 4em;
     height: 4em;
-    background-image: url('/imagens/netuno.png');
+    background-image: url('./imagens/netuno.png');
     background-size: cover;
 }
 .plutao::before {
@@ -219,7 +219,7 @@ img{
     right: 10em;
     width: 4em;
     height: 4em;
-    background-image: url('/imagens/plutao.png');
+    background-image: url('./imagens/plutao.png');
     background-size: cover;
 }
 
