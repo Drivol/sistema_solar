@@ -238,7 +238,7 @@ img{
 
 /* Menu */
 
-.indentificacao-planetas{
+.identificacao-planetas{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -294,12 +294,15 @@ a{
     justify-content:right;
     position: fixed;
     right: 3em;
-    width: 500px;
-    height: 900px;
-    margin-bottom: 50px;
+    
+    
+   
 }
 .planetas{
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -310,10 +313,38 @@ a{
     border-radius: 10%;
     color: white;
     background-color: rgba(255, 255, 255, 0.438);
+    
+}
+
+.descricao{
+    margin: 2em;
+    text-align: justify;
+    font-size: 1.4em;
 }
 
 
+.lista:hover + .info-planetas {
+    display: block;
+}
 
-.descricao{
-    margin: 0;
+/* Defina a exibição padrão para none */
+.info-planetas {
+    display: none;
+}
+
+/* Menu lado direito quando o hover está ativo */
+.identificacao-planetas .lista:hover + .info-planetas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 300px; /* Ajuste a posição conforme necessário */
+    right: 50px;
+    width: 400px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    /* z-index: 10; */
 }
