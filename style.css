@@ -11,13 +11,15 @@
     justify-content: center;
     background-color: black;
     overflow:auto;
-    background-image: url(./imagens/galaxy.jpg); 
+    background-image: url(./imagens/galaxy.jpg);
+
+
 }
 .container {
     font-size: 6px;
     width: 50em;
-    height: 50em; 
-    position: relative;   
+    height: 50em;
+    position: relative;
 }
 
 img{
@@ -73,56 +75,56 @@ img{
     top: 6em;
     left: 6em;
     width: 28em;
-    height: 28em; 
-    animation: orbit 36.5s linear infinite;   
+    height: 28em;
+    animation: orbit 36.5s linear infinite;
 }
 .lua {
     top: 2em;
     right: -1em;
     width: 7em;
-    height: 7em; 
+    height: 7em;
     animation: orbit 2.7s linear infinite;
 }
 .marte {
     top: 2em;
     left: 2.5em;
     width: 36em;
-    height: 36em; 
+    height: 36em;
     animation: orbit 26.5s linear infinite;
 }
 .jupiter {
     top: -2em;
     left: -2em;
     width: 45em;
-    height: 45em; 
+    height: 45em;
     animation: orbit 21s linear infinite;
 }
 .saturno {
     top: -7em;
     left: -7em;
     width: 55em;
-    height: 55em; 
+    height: 55em;
     animation: orbit 17s linear infinite;
 }
 .urano {
     top: -12em;
     left: -12em;
     width: 65em;
-    height: 65em; 
+    height: 65em;
     animation: orbit 19s linear infinite;
 }
 .netuno {
     top: -17em;
     left: -17em;
     width: 75em;
-    height: 75em; 
+    height: 75em;
     animation: orbit 15s linear infinite;
 }
 .plutao {
     top: -22em;
     left: -22em;
     width: 85em;
-    height: 85em; 
+    height: 85em;
     animation: orbit 18s linear infinite;
 }
 
@@ -140,6 +142,7 @@ img{
     position: absolute;
     border-radius: 50%;
     animation: orbit 30s linear infinite;
+
 }
 .mercurio::before {
     top: 1.5em;
@@ -236,7 +239,7 @@ img{
     }
 }
 
-/* Menu */
+    /* MENU LADO EQUERDO */
 
 .identificacao-planetas{
     display: flex;
@@ -245,8 +248,8 @@ img{
     position: fixed;
     width: 500px;
     height: 900px;
-    
-    
+
+
 }
 
 .lista{
@@ -260,7 +263,7 @@ img{
     border: solid 1px white;
     border-radius: 10%;
     color: white;
- 
+
 }
 
 .lista img{
@@ -274,8 +277,10 @@ img{
     align-items: center;
     justify-content: space-around;
     text-align: center;
-    color: white; 
+    color: white;
 }
+
+/* LIGAÇÃO DO MENU DA ESQUERDA COM O MENU DA ESQUERDA */
 
 .lista:hover{
     background-color: rgba(255, 255, 255, 0.537);
@@ -294,9 +299,9 @@ a{
     justify-content:right;
     position: fixed;
     right: 3em;
-    
-    
-   
+
+
+
 }
 .planetas{
     display: flex;
@@ -313,7 +318,7 @@ a{
     border-radius: 10%;
     color: white;
     background-color: rgba(255, 255, 255, 0.438);
-    
+
 }
 
 .descricao{
@@ -327,24 +332,169 @@ a{
     display: block;
 }
 
-/* Defina a exibição padrão para none */
+
 .info-planetas {
     display: none;
 }
 
-/* Menu lado direito quando o hover está ativo */
 .identificacao-planetas .lista:hover + .info-planetas {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 300px; /* Ajuste a posição conforme necessário */
-    right: 50px;
-    width: 400px;
-    height: auto;
-    background-color: rgba(0, 0, 0, 0.7);
+    top: 300px;
+    right: 0;
+    width: 0;
+    height: 0;
     color: white;
     padding: 20px;
     z-index: 10;
 }
+
+.integrantes{
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+}
+.integrantes li{
+    list-style: none;
+    text-decoration: none;
+    margin: 1em;
+    align-items: center;
+    text-align: center;
+}
+
+/* CSS NOMES: */
+
+nav {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 8rem;
+    justify-content: end;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.101);
+    color: white;
+    padding-top: 150px;
+  }
+
+    nav ul {
+        list-style-type: none; 
+        padding: 0;
+        position: relative;
+        display: flex;
+        top: -229px;
+    }
+    
+    nav li {
+        margin: 15px 0; 
+    }
+    
+    nav a {
+        text-decoration: none; 
+        color: white; 
+        padding: 10px 20px; 
+        border-radius: 5px;
+        transition: background-color 0.3s; 
+        margin: 5px;
+    }
+    
+    nav a:hover {
+        background-color: rgba(255, 255, 255, 0.438);
+    }
+
+    /* FOGUETE */
+
+    .foguete{display: flex;
+        position: absolute;
+        transform-style: preserve-3d;
+        animation-name: foguete;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    
+           
+    .foguete img
+    {width: 40%;
+    height: 40%;
+    }
+    
+    .foguete .foguete_texto {
+        visibility: hidden;
+        width: 25pxo;
+        background-color: rgba(255, 255, 255, 0.438);
+        color:white;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+        position: absolute;
+        z-index: 1;
+        top: -25px;
+        left: -55px;
+        border-radius: 10%;
+        }
+    
+    
+    @keyframes foguete {
+        from{
+      left: 10%;top: 10%;
+        }
+        to{
+      left: 110%; top: 110%;
+        }
+      0%{transform: rotateZ(30deg)
+        
+      }
+      50%{transform: rotateZ(-30deg); 
+      }
+      100%{ transform: rotateZ(30deg);}
+      }
+    
+      
+    .puf{display: flex;
+        position: absolute;
+        transform-style: preserve-3d;
+        animation-name: puf;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    
+           
+    .puf img
+    {width: 70%;
+    height: 70%;
+    }
+    
+    .puf .puf_texto {
+    visibility: hidden;
+    width: 25pxo;
+    background-color: rgba(255, 255, 255, 0.438);
+    color:white;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    top: -25px;
+    left: -55px;
+    border-radius: 10%;
+    }
+    
+    @keyframes puf {
+        from{
+      left: 0%;top: 40%;
+        }
+        to{
+      left: 110%; top: 140%;
+        }
+      0%{transform: rotateZ(30deg)
+        
+      }
+      50%{transform: rotateZ(20deg); 
+      }
+      100%{ transform: rotateZ(30deg);}
+      }
