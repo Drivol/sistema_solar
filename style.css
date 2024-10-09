@@ -174,7 +174,7 @@ img{
     right: 0.2em;
     width: 1.2em;
     height: 1.2em;
-    background-image: url('./imagens/lua.png');
+    background-image: url('./imagens/moon-6311_256.gif');
     background-size: cover;
 }
 .marte::before {
@@ -394,94 +394,135 @@ nav {
 
     /* FOGUETE */
 
-    .foguete{display: flex;
-        position: absolute;
-        transform-style: preserve-3d;
-        animation-name: foguete;
-        animation-duration: 20s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-    }
-    
-           
-    .foguete img
-    {width: 60%;
-    height: 60%;
-    }
-    
-    .foguete .foguete_texto {
-        visibility: hidden;
-        width: 25pxo;
-        background-color: rgba(255, 255, 255, 0.438);
-        color:white;
-        text-align: center;
-        padding: 5px 0;
-        border-radius: 6px;
-        position: absolute;
-        z-index: 1;
-        top: -25px;
-        left: -55px;
-        border-radius: 10%;
-        }
-    
-    
-    @keyframes foguete {
-        from{
-      left: 10%;top: 10%;
-        }
-        to{
-      left: 110%; top: 110%;
-        }
-      0%{transform: rotateZ(30deg)
-        
-      }
-      50%{transform: rotateZ(-30deg); 
-      }
-      100%{ transform: rotateZ(30deg);}
-      }
-    
-      
-    .puf{display: flex;
-        position: absolute;
-        transform-style: preserve-3d;
-        animation-name: puf;
-        animation-duration: 20s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-    }
-    
-           
-    .puf img
-    {width: 70%;
-    height: 70%;
-    }
-    
-    .puf .puf_texto {
-    visibility: hidden;
-    width: 25pxo;
-    background-color: rgba(255, 255, 255, 0.438);
-    color:white;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
+.foguete {
+
+    display: flex;
     position: absolute;
-    z-index: 1;
-    top: -25px;
-    left: -55px;
-    border-radius: 10%;
+    transform-style: preserve-3d;
+    animation-name: foguete;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+.foguete img {
+    padding: 20px;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    width: 50%;
+    height: 50%;
+}
+
+.foguete .foguete_texto {
+    display: none;
+    position: absolute;
+    top: -15%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.438);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.foguete:hover .foguete_texto {
+    display: block;  /* Mostra a mensagem ao passar o mouse */
+}
+
+/* /ANIMAÇÃO DO FOGURTE/ */
+
+@keyframes foguete {
+    from {
+        left: 10%;
+        top: 10%;
     }
-    
-    @keyframes puf {
-        from{
-      left: 0%;top: 40%;
-        }
-        to{
-      left: 110%; top: 140%;
-        }
-      0%{transform: rotateZ(30deg)
-        
-      }
-      50%{transform: rotateZ(20deg); 
-      }
-      100%{ transform: rotateZ(30deg);}
-      }
+
+    to {
+        left: 110%;
+        top: 110%;
+    }
+
+    0% {
+        transform: rotateZ(30deg)
+    }
+
+    50% {
+        transform: rotateZ(-30deg);
+    }
+
+    100% {
+        transform: rotateZ(30deg);
+    }
+}
+
+/* PUFF */
+
+.puf {
+    display: flex;
+    position: absolute;
+    transform-style: preserve-3d;
+    animation-name: puf;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+.puf img {
+    padding: 20px;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    width: 40%;
+    height: 40%;
+}
+
+.puf .puf_texto {
+    display: none;
+    position: absolute;
+    top: -15%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.438);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.puf:hover .puf_texto{
+    display: block;  /* Mostra a mensagem ao passar o mouse */
+}
+
+/* ANIMAÇÃO DO PUFF */
+
+@keyframes puf {
+    from {
+        left: 0%;
+        top: 40%;
+    }
+
+    to {
+        left: 110%;
+        top: 140%;
+    }
+
+    0% {
+        transform: rotateZ(30deg)
+    }
+
+    50% {
+        transform: rotateZ(20deg);
+    }
+
+    100% {
+        transform: rotateZ(30deg);
+    }
+}
