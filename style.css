@@ -146,8 +146,8 @@ img{
     position: absolute;
     border-radius: 50%;
     animation: orbit 30s linear infinite;
-
 }
+
 .mercurio::before {
     top: 1.5em;
     right: 0.8em;
@@ -252,8 +252,6 @@ img{
     position: fixed;
     width: 500px;
     height: 900px;
-
-
 }
 
 .lista{
@@ -267,7 +265,6 @@ img{
     border: solid 1px white;
     border-radius: 10%;
     color: white;
-
 }
 
 .lista img{
@@ -294,17 +291,12 @@ a{
     text-decoration: none;
 }
 
-
-
-
 .descricao-dos-planetas{
     display: flex;
     flex-direction: row;
     justify-content:right;
     position: fixed;
     right: 3em;
-
-
 
 }
 .planetas{
@@ -322,7 +314,6 @@ a{
     border-radius: 10%;
     color: white;
     background-color: rgba(255, 255, 255, 0.438);
-
 }
 
 .descricao{
@@ -357,7 +348,6 @@ a{
 }
 
 /* CSS NOMES: */
-
 nav {
     display: flex;
     position: absolute;
@@ -389,7 +379,7 @@ nav {
         padding: 10px 20px; 
         border-radius: 5px;
         transition: background-color 0.3s; 
-        margin: 5px;
+        
     }
     
     nav a:hover {
@@ -509,13 +499,13 @@ nav {
 
 @keyframes puf {
     from {
-        left: 0%;
-        top: 40%;
+        left: 50%;
+        top: 100%;
     }
 
     to {
-        left: 110%;
-        top: 140%;
+        left: 50%;
+        top: -140%;
     }
 
     0% {
